@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Гунько](https://up.htmlacademy.ru/adaptive/20/user/1042553).
-* Наставник: `Неизвестно`.
+* Наставник: Без наставника.
 
 ---
 
