@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+@import "blocks/fonts.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+@import "blocks/advantages.less";
+@import "blocks/page-header.less";
+@import "blocks/newsfeed.less";
+@import "blocks/page-footer.less";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
