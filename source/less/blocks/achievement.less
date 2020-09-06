@@ -1,0 +1,49 @@
+.achievement {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.achievement__title {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievement__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.achievement__text {
+  color: #283645;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .achievement {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievement__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 936px;
+  }
+
+  .achievement__item {
+    width: 300px;
+  }
+}

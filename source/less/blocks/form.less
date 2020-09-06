@@ -1,0 +1,144 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 22px;
+}
+
+.form__subtitle h3 {
+  color: #283645;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 45px 22px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+  height: 59px;
+}
+
+.form__item label {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.form__item input {
+  color: #283645;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+  border: 2px solid #e5e5e5;
+}
+
+.form__tip {
+  color: #283645;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form__subtitle h3 {
+    color: #283645;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 46px 177px 58px;
+  }
+
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .form__block:nth-child(1) {
+    order: 1;
+  }
+
+  .form__block:nth-child(4) {
+    order: 2;
+  }
+
+  .form__block:nth-child(2) {
+    order: 3;
+  }
+
+  .form__block:nth-child(3) {
+    order: 4;
+  }
+
+  .form__block:nth-child(5) {
+    order: 5;
+  }
+
+  .form__block:nth-child(6) {
+    order: 6;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__subtitle h3 {
+    padding: 47px 61px 58px;
+  }
+
+  .form__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 1200px;
+    margin: 70px 130px;
+  }
+
+  .form__block:nth-child(1) {
+    order: 1;
+    min-width: 470px;
+  }
+
+  .form__block:nth-child(4) {
+    order: 2;
+    min-width: 470px;
+  }
+
+  .form__block:nth-child(3) {
+    order: 3;
+    min-width: 840px;
+  }
+
+  .form__block:nth-child(2) {
+    order: 4;
+    min-width: 840px;
+  }
+
+  .form__block:nth-child(5) {
+    order: 5;
+    min-width: 840px;
+  }
+
+  .form__block:nth-child(6) {
+    order: 6;
+    display: flex;
+    flex-direction: row;
+    min-width: 840px;
+  }
+}

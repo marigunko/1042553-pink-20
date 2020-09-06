@@ -1,0 +1,155 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 59px 35px 34px 21px;
+  }
+
+  .effect__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .effect__timer {
+    position: relative;
+    width: 177px;
+    height: 149px;
+    font-size: 96px;
+    font-weight: 700;
+    color: @pink;
+    margin: 61px 102px 0 29px;
+    padding: 78px 0 0 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -58px;
+      left: -48px;
+      width: 275px;
+      height: 275px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -2px;
+      left: -10px;
+      width: 200px;
+      height: 200px;
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+    }
+  }
+
+  .effect__title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: left;
+    margin: 0;
+    padding: 42px 129px 10px 33px;
+  }
+
+  .effect__desc {
+    color: #283645;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 2px 0 6px 33px;
+  }
+
+  .effect__desc br {
+    display: none;
+  }
+
+  .effect__link {
+    color: #d22856;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    margin: 0;
+    padding: 74px 178px 110px 95px;
+    background-color: #f2f2f2;
+  }
+
+  .effect__timer {
+    position: relative;
+    width: 177px;
+    height: 149px;
+    font-size: 121px;
+    font-weight: 700;
+    color: @pink;
+    margin: 61px 102px 0 29px;
+    padding: 58px 0 0 85px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -114px;
+      left: -17px;
+      width: 345px;
+      height: 345px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -44px;
+      left: 31px;
+      width: 250px;
+      height: 250px;
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: contain;
+    }
+  }
+
+  .effect__text {
+    padding-left: 60px;
+  }
+
+  .effect__title {
+    padding-top: 38px;
+  }
+
+  .effect__desc {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 12px 0 32px 33px;
+  }
+
+  .effect__desc br {
+    display: block;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 166px;
+  }
+}

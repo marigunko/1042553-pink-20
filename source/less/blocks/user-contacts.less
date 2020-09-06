@@ -1,0 +1,27 @@
+.user-contacts {
+  width: 320px;
+  height: 287px;
+}
+
+.user-contacts_title {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts_title {
+    display: flex;
+    color: #d22856;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts__content {
+    display: flex;
+    flex-direction: row;
+  }
+}

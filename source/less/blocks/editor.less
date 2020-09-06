@@ -1,0 +1,126 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 2px 18px 43px;
+}
+
+.editor__image--label {
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  display: block;
+  width: 280px;
+  height: 374px;
+  background-size: cover;
+}
+
+.editor__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 27px 37px;
+}
+
+.editor__tools--crop {
+  fill: #d22856;
+}
+
+.editor__tools--fill,
+.editor__tools--contrast {
+  fill: #283645;
+  fill-opacity: 0.3;
+}
+
+.range-controls--active {
+  position: relative;
+  margin: 28px 20px;
+}
+
+.range-controls--active .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls--active .bar {
+  width: 240px;
+  height: 2px;
+
+  background: #283645;
+}
+
+.range-controls--active .range-toggle {
+  position: absolute;
+  top: -6px;
+  right: 37px;
+
+
+  padding: 5px;
+
+  cursor: pointer;
+
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.editor__button { /*У кнопок другой фон*/
+  color: #283645;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 28px;
+  padding: 15px 37px;
+
+  border: 3px #283645;
+  border-radius: 50px;
+}
+
+.editor__button--post {
+  color: #d22856;
+  margin-top: 42px;
+  padding: 16px 89px;
+
+  border: 3px solid #d22856;
+  border-radius: 50px;
+}
+
+
+.editor__button--decline {
+  color: rgba(40, 54, 69, 0.1);
+  margin-top: 12px;
+  padding: 16px 101px;
+
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .editor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .editor-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .editor__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editor__submit {
+    display: flex;
+    flex-direction: row;
+  }
+}

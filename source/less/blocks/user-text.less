@@ -1,0 +1,31 @@
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-text__item label {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-text__item textarea {
+  color: #283645;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  width: 276px;
+  height: 197px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-text__item {
+    display: flex;
+    flex-direction: column;
+  }
+}

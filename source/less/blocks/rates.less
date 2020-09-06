@@ -1,0 +1,272 @@
+.rates {
+  display: flex;
+  flex-direction: column;
+  padding-top: 91px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rates::after { /*Здесь нужно поменять цвет на серый*/
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 1200px;
+  height: 95px;
+
+  content: "";
+
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
+
+.rates__available-list--tablet {
+  display: none;
+}
+
+.rates__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  content: "";
+  transform: translateX(-257px);
+}
+
+.rates__item {
+  width: 278px;
+  min-width: 278px;
+  padding: 0;
+}
+
+.rates__head {
+  position: relative;
+  overflow: hidden;
+  height: 97px;
+  border-bottom: 2px solid #283645;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  background-color: #283645;
+}
+
+.rates__head span {
+  content: "";
+
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 15px;
+  left: -36px;
+  z-index: 2;
+
+  width: 120px;
+  height: 26px;
+  background-color: #d22856;
+
+  display: block;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rates__head h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.rates__head p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.rates__available-list,
+.rates__available-list--tablet {
+  padding: 0;
+  list-style: none;
+}
+
+.rates__available-item,
+.rates__available-item--tablet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: none;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  padding: 12px 19px 12px 21px;
+}
+
+.rates__available-item h3,
+.rates__available-item--tablet h3 {
+  color: #283645;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+}
+
+.rates__control {
+  display: none;
+}
+
+.rates__toggles {
+  margin: 29px 0 5px;
+}
+
+.rates__icon--yes {
+  fill: #3dc644;
+}
+
+.rates__icon--no {
+  fill: #f25b26;
+}
+
+@media (min-width: @tablet-width) {
+  .rates {
+    display: flex;
+    flex-direction: row;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding-top: 70px;
+  }
+
+  .rates__available-list--tablet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 98px 0 0 22px;
+  }
+
+  .rates__available-item--tablet h3 {
+    text-transform: none;
+  }
+
+  .rates__head {
+    height: 79px;
+  }
+
+  .rates__head h2 {
+    padding-top: 10px;
+  }
+
+  .rates__head p {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .rates__head span {
+    top: 4px;
+    left: -44px;
+  }
+
+  .rates__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+
+    content: "";
+    transform: translateX(0);
+  }
+
+  .rates__item {
+    width: 155px;
+    min-width: 155px;
+  }
+
+  .rates__available-item--tablet {
+    margin: 0;
+    padding: 8px 25px 8px 13px;
+  }
+
+  .rates__available-item {
+    margin: 0;
+    padding: 5px 62px;
+  }
+
+  .rates__available-item h3 {
+    display: none;
+  }
+
+  .rates__control,
+  .rates__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates {
+    padding-bottom: 93px;
+  }
+
+  .rates__control {
+    display: none;
+  }
+
+  .rates__list {
+    margin-top: 85px;
+  }
+
+  .rates__available-list--tablet {
+    margin: 180px 0 0 128px;
+  }
+
+  .rates__available-item--tablet {
+    padding: 15px 66px 15px 23px;
+  }
+
+  .rates__available-item h3,
+  .rates__available-item--tablet h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .rates__available-item {
+    padding: 12px 103px;
+  }
+
+  .rates__item {
+    width: 235px;
+    min-width: 235px;
+  }
+
+  .rates__head {
+    height: 96px;
+  }
+
+  .rates__head h2 {
+    padding-top: 14px;
+  }
+
+  .rates__head p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .rates__head span {
+    top: 13px;
+    left: -35px;
+  }
+}
