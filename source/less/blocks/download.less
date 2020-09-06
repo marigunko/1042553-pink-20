@@ -1,0 +1,110 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #17212d;
+}
+
+.download__button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 28px;
+  padding: 15px 37px;
+
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+}
+
+.download__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.download__item {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.download__link {
+  display: inline-block;
+  vertical-align: middle;
+  align-self: baseline;
+}
+
+.download__link--appstore {
+  margin-top: 33px;
+}
+
+.download__link--playmarket {
+  margin-top: 41px;
+}
+
+.download__link--microsoftstore {
+  margin-top: 44px;
+}
+
+.download__description {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 22px 26px 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    background-color: transparent;
+    width: 310px;
+    padding: 0;
+    margin-left: 14px;
+    margin-bottom: 74px;
+  }
+
+  .download__button {
+    margin: 0;
+    padding: 15px 45px;
+  }
+
+  .download__list {
+    padding-top: 14px;
+  }
+
+  .download__description {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 36px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    margin-left: 125px;
+    margin-bottom: 67px;
+  }
+
+  .download__button {
+    font-size: 21px;
+    line-height: 0.86;
+    padding: 15px 29px;
+  }
+
+  .download__list {
+    padding-top: 35px;
+  }
+
+  .download__description {
+    padding: 55px 0;
+  }
+}
